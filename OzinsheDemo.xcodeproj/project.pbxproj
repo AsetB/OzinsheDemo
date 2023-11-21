@@ -16,6 +16,13 @@
 		DB4F1CB62AF3AE160086DFD5 /* OzinsheDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CB52AF3AE160086DFD5 /* OzinsheDemoTests.swift */; };
 		DB4F1CC02AF3AE160086DFD5 /* OzinsheDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CBF2AF3AE160086DFD5 /* OzinsheDemoUITests.swift */; };
 		DB4F1CC22AF3AE160086DFD5 /* OzinsheDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CC12AF3AE160086DFD5 /* OzinsheDemoUITestsLaunchTests.swift */; };
+		DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF780BC2B074BE2005DA017 /* TabBarController.swift */; };
+		DBF780C72B077016005DA017 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */; };
+		DBF780C82B077016005DA017 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */; };
+		DBF780C92B077016005DA017 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C52B077016005DA017 /* SF-Pro-Display-Semibold.otf */; };
+		DBF780CA2B077016005DA017 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C62B077016005DA017 /* SF-Pro-Display-Regular.otf */; };
+		DBF780CD2B0D1D5B005DA017 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF780CC2B0D1D5B005DA017 /* FavoriteTableViewController.swift */; };
+		DBF780CF2B0D1E7F005DA017 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF780CE2B0D1E7F005DA017 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		DB4F1CBB2AF3AE160086DFD5 /* OzinsheDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OzinsheDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4F1CBF2AF3AE160086DFD5 /* OzinsheDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheDemoUITests.swift; sourceTree = "<group>"; };
 		DB4F1CC12AF3AE160086DFD5 /* OzinsheDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBF780BC2B074BE2005DA017 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		DBF780C52B077016005DA017 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		DBF780C62B077016005DA017 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		DBF780CC2B0D1D5B005DA017 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		DBF780CE2B0D1E7F005DA017 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,10 @@
 		DB4F1C9D2AF3AE150086DFD5 /* OzinsheDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DB4F1C9E2AF3AE150086DFD5 /* AppDelegate.swift */,
+				DBF780BE2B076E02005DA017 /* Fonts */,
+				DBF780CB2B0D1CFE005DA017 /* Controllers */,
 				DB4F1CA02AF3AE150086DFD5 /* SceneDelegate.swift */,
-				DB4F1CA22AF3AE150086DFD5 /* ViewController.swift */,
+				DB4F1C9E2AF3AE150086DFD5 /* AppDelegate.swift */,
 				DB4F1CA42AF3AE150086DFD5 /* Main.storyboard */,
 				DB4F1CA72AF3AE160086DFD5 /* Assets.xcassets */,
 				DB4F1CA92AF3AE160086DFD5 /* LaunchScreen.storyboard */,
@@ -125,6 +140,28 @@
 				DB4F1CC12AF3AE160086DFD5 /* OzinsheDemoUITestsLaunchTests.swift */,
 			);
 			path = OzinsheDemoUITests;
+			sourceTree = "<group>";
+		};
+		DBF780BE2B076E02005DA017 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */,
+				DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */,
+				DBF780C62B077016005DA017 /* SF-Pro-Display-Regular.otf */,
+				DBF780C52B077016005DA017 /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DBF780CB2B0D1CFE005DA017 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB4F1CA22AF3AE150086DFD5 /* ViewController.swift */,
+				DBF780BC2B074BE2005DA017 /* TabBarController.swift */,
+				DBF780CC2B0D1D5B005DA017 /* FavoriteTableViewController.swift */,
+				DBF780CE2B0D1E7F005DA017 /* MovieTableViewCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +268,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF780C92B077016005DA017 /* SF-Pro-Display-Semibold.otf in Resources */,
 				DB4F1CAB2AF3AE160086DFD5 /* LaunchScreen.storyboard in Resources */,
 				DB4F1CA82AF3AE160086DFD5 /* Assets.xcassets in Resources */,
+				DBF780C72B077016005DA017 /* SF-Pro-Display-Bold.otf in Resources */,
 				DB4F1CA62AF3AE150086DFD5 /* Main.storyboard in Resources */,
+				DBF780CA2B077016005DA017 /* SF-Pro-Display-Regular.otf in Resources */,
+				DBF780C82B077016005DA017 /* SF-Pro-Display-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF780CD2B0D1D5B005DA017 /* FavoriteTableViewController.swift in Sources */,
 				DB4F1CA32AF3AE150086DFD5 /* ViewController.swift in Sources */,
+				DBF780CF2B0D1E7F005DA017 /* MovieTableViewCell.swift in Sources */,
+				DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */,
 				DB4F1C9F2AF3AE150086DFD5 /* AppDelegate.swift in Sources */,
 				DB4F1CA12AF3AE150086DFD5 /* SceneDelegate.swift in Sources */,
 			);
@@ -353,7 +397,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -416,7 +460,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -449,6 +493,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +521,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
