@@ -6,15 +6,79 @@
 //
 
 import UIKit
+import Localize_Swift
 
-class LanguageViewController: UIViewController {
+protocol LanguageProtocol {
+    func languageDidChange()
+}
 
+class LanguageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
+    
+    let languageArray = [["English", "en"], ["Қазақша", "kk"], ["Русский", "ru"]]
+    
+    @IBOutlet weak var languageLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backGroundView: UIView!
+    
+    var delegate: LanguageProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        backGroundView.layer.cornerRadius = 32.0
+        backGroundView.clipsToBounds = true
+        backGroundView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissView))
+        tap.delegate = self
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
     }
     
+    @objc func dismissView() {
+      self.dismiss(animated: true, completion: nil)
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+      if (touch.view?.isDescendant(of: backGroundView))! {
+        return false
+      }
+      return true
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return languageArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let label = cell.viewWithTag(1000) as! UILabel
+        label.text = languageArray[indexPath.row][0]
+        
+        let checkImageView = cell.viewWithTag(1001) as! UIImageView
+        
+        if Localize.currentLanguage() == languageArray[indexPath.row][1] {
+            checkImageView.image = UIImage(named: "Check")
+        } else {
+            checkImageView.image = nil
+        }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 65.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Localize.setCurrentLanguage(languageArray[indexPath.row][1])
+        delegate?.languageDidChange()
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
