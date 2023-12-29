@@ -10,7 +10,10 @@
 		0A507A1707F63798A028F83C /* Pods_OzinsheDemo_OzinsheDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8F3D98F772DB9A8E1A5227 /* Pods_OzinsheDemo_OzinsheDemoUITests.framework */; };
 		28B8C20CF74B1A4AFDC8FB87 /* Pods_OzinsheDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE068BA3B0029A4C70EFA71 /* Pods_OzinsheDemo.framework */; };
 		DA65A7287DAFA92AFB83A235 /* Pods_OzinsheDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D3EBD2B9601A46A32F9E7A /* Pods_OzinsheDemoTests.framework */; };
+		DB4094C02B35FB6D0001B505 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4094BF2B35FB6D0001B505 /* UIViewController + Extensions.swift */; };
 		DB4362692B30630B00285B5A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4362682B30630B00285B5A /* Enums.swift */; };
+		DB43626B2B31A18900285B5A /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43626A2B31A18900285B5A /* ProfileEditViewController.swift */; };
+		DB4CDBBD2B35AEAD007ECDBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CDBBC2B35AEAD007ECDBF /* LoginViewController.swift */; };
 		DB4F1C9F2AF3AE150086DFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1C9E2AF3AE150086DFD5 /* AppDelegate.swift */; };
 		DB4F1CA12AF3AE150086DFD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CA02AF3AE150086DFD5 /* SceneDelegate.swift */; };
 		DB4F1CA32AF3AE150086DFD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CA22AF3AE150086DFD5 /* ViewController.swift */; };
@@ -23,6 +26,8 @@
 		DB945CA32B2B1FA0007C57BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB945CA52B2B1FA0007C57BD /* Localizable.strings */; };
 		DB945CA92B2C6F19007C57BD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB945CA82B2C6F19007C57BD /* ProfileViewController.swift */; };
 		DB945CAB2B2C7A39007C57BD /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB945CAA2B2C7A39007C57BD /* LanguageViewController.swift */; };
+		DBB4DC862B345A1400E6D192 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4DC852B345A1400E6D192 /* LogoutViewController.swift */; };
+		DBB4DC882B345F5500E6D192 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4DC872B345F5500E6D192 /* ChangePasswordViewController.swift */; };
 		DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF780BC2B074BE2005DA017 /* TabBarController.swift */; };
 		DBF780C72B077016005DA017 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */; };
 		DBF780C82B077016005DA017 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */; };
@@ -58,7 +63,10 @@
 		7E06FB8E67EC2AB1EF699561 /* Pods-OzinsheDemo-OzinsheDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo-OzinsheDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo-OzinsheDemoUITests/Pods-OzinsheDemo-OzinsheDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E632C1E3421F62741FBDE60 /* Pods-OzinsheDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-OzinsheDemoTests/Pods-OzinsheDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D1A8C4632A91D247DA4E0D3 /* Pods-OzinsheDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.release.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DB4094BF2B35FB6D0001B505 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		DB4362682B30630B00285B5A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		DB43626A2B31A18900285B5A /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		DB4CDBBC2B35AEAD007ECDBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB4F1C9B2AF3AE150086DFD5 /* OzinsheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzinsheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4F1C9E2AF3AE150086DFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4F1CA02AF3AE150086DFD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 		DB945CA72B2B2051007C57BD /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DB945CA82B2C6F19007C57BD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DB945CAA2B2C7A39007C57BD /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		DBB4DC852B345A1400E6D192 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		DBB4DC872B345F5500E6D192 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		DBF780BC2B074BE2005DA017 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
@@ -138,6 +148,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DB4094BE2B35FB450001B505 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB4094BF2B35FB6D0001B505 /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DB4362672B3062DB00285B5A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +189,7 @@
 		DB4F1C9D2AF3AE150086DFD5 /* OzinsheDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DB4094BE2B35FB450001B505 /* Extensions */,
 				DBF780BE2B076E02005DA017 /* Fonts */,
 				DB4362672B3062DB00285B5A /* Helpers */,
 				DBF780CB2B0D1CFE005DA017 /* Controllers */,
@@ -222,6 +241,10 @@
 				DBF780CE2B0D1E7F005DA017 /* MovieTableViewCell.swift */,
 				DB945CAA2B2C7A39007C57BD /* LanguageViewController.swift */,
 				DB945CA82B2C6F19007C57BD /* ProfileViewController.swift */,
+				DB43626A2B31A18900285B5A /* ProfileEditViewController.swift */,
+				DBB4DC852B345A1400E6D192 /* LogoutViewController.swift */,
+				DBB4DC872B345F5500E6D192 /* ChangePasswordViewController.swift */,
+				DB4CDBBC2B35AEAD007ECDBF /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -476,10 +499,15 @@
 				DB4F1CA32AF3AE150086DFD5 /* ViewController.swift in Sources */,
 				DB945CAB2B2C7A39007C57BD /* LanguageViewController.swift in Sources */,
 				DBF780CF2B0D1E7F005DA017 /* MovieTableViewCell.swift in Sources */,
+				DBB4DC862B345A1400E6D192 /* LogoutViewController.swift in Sources */,
 				DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */,
 				DB945CA92B2C6F19007C57BD /* ProfileViewController.swift in Sources */,
+				DB43626B2B31A18900285B5A /* ProfileEditViewController.swift in Sources */,
 				DB4F1C9F2AF3AE150086DFD5 /* AppDelegate.swift in Sources */,
+				DBB4DC882B345F5500E6D192 /* ChangePasswordViewController.swift in Sources */,
+				DB4094C02B35FB6D0001B505 /* UIViewController + Extensions.swift in Sources */,
 				DB4362692B30630B00285B5A /* Enums.swift in Sources */,
+				DB4CDBBD2B35AEAD007ECDBF /* LoginViewController.swift in Sources */,
 				DB4F1CA12AF3AE150086DFD5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

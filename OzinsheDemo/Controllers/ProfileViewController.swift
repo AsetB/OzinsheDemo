@@ -14,13 +14,25 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     @IBOutlet weak var languageButton: UIButton!
     @IBOutlet weak var languageLabel: UILabel!
     
+    @IBOutlet weak var personalDataButton: UIButton!
+    @IBOutlet weak var personalDataEditLabel: UILabel!
+    
+    @IBOutlet weak var changePassButton: UIButton!
+    
+    @IBOutlet weak var termsButton: UIButton!
+    @IBOutlet weak var announcementButton: UIButton!
+    @IBOutlet weak var darkModeButton: UIButton!
+    
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    
     override func viewDidAppear(_ animated: Bool) {
         
 //        if Localize.currentLanguage() == "ru" {
@@ -41,6 +53,13 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     func configureViews() {
         myProfileLabel.text = "MY_PROFILE".localized()
         languageButton.setTitle("LANGUAGE".localized(), for: .normal)
+        personalDataButton.setTitle("PERSONAL_DATA".localized(), for: .normal)
+        personalDataEditLabel.text = "EDIT".localized()
+        changePassButton.setTitle("CHANGE_PASSWORD".localized(), for: .normal)
+        announcementButton.setTitle("ANNOUNCEMENT".localized(), for: .normal)
+        darkModeButton.setTitle("DARK_MODE".localized(), for: .normal)
+        termsButton.setTitle("TERMS_AND_CONDITIONS".localized(), for: .normal)
+        navigationBar.title = "PROFILE".localized()
         
         switch Localize.currentLanguage() {
         case "ru": languageLabel.text = "Русский"
@@ -61,6 +80,26 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     func languageDidChange() {
         configureViews()
     }
+    
+    
+    @IBAction func personalDataShow(_ sender: Any) {
+        let personalDataVC = storyboard?.instantiateViewController(withIdentifier: "ProfileEditViewController") as! ProfileEditViewController
+        navigationController?.show(personalDataVC, sender: self)
+        
+    }
+    
+    @IBAction func changePassShow(_ sender: Any) {
+        let changePassVC = storyboard?.instantiateViewController(withIdentifier: "ChangePasswordViewController") as! ChangePasswordViewController
+        navigationController?.show(changePassVC, sender: self)
+    }
+    
+    @IBAction func exitButton(_ sender: Any) {
+        let exitVC = storyboard?.instantiateViewController(withIdentifier: "LogoutViewController") as! LogoutViewController
+        exitVC.modalPresentationStyle = .overFullScreen
+        present(exitVC, animated: true, completion: nil)
+    }
+    
+    
     
     /*
     // MARK: - Navigation

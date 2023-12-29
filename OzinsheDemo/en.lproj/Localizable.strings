@@ -6,5 +6,35 @@
   
 */
 
+"PROFILE" = "Profile";
 "MY_PROFILE" = "My profile";
 "LANGUAGE" = "Language";
+"PERSONAL_DATA" = "Personal data";
+"EDIT" = "Edit";
+"CHANGE_PASSWORD" = "Change password";
+"TERMS_AND_CONDITIONS" = "Terms and conditions";
+"ANNOUNCEMENT" = "Announcement";
+"DARK_MODE" = "Dark mode";
+"YOUR_NAME" = "Your name";
+"TELEPHONE" = "Telephone";
+"DATE_OF_BIRTH" = "Date of birth";
+"SAVE_CHANGES" = "Save changes";
+"EXIT" = "Exit";
+"CONFIRM_EXIT_FROM_ACCOUNT" = "Are you really want to log out from the account?";
+"YES_EXIT" = "Yes, exit";
+"NO" = "No";
+"YOUR_PASSWORD" = "Your password";
+"REPEAT_PASSWORD" = "Repeat the password";
+"HELLO" = "Hello";
+"LOGIN_INTO_ACCOUNT" = "Log in to your account";
+"PASSWORD" = "Password";
+"YOUR_EMAIL" = "Your email";
+"FORGOT_YOUR_PASSWORD" = "Forgot your password?";
+"LOGIN" = "Log in";
+"NO_ACCOUNT_SIGN_UP" = "No account? Sign up";
+"OR" = "Or";
+"SIGNUP_APPLE" = "Sign up with an Apple ID";
+"SIGNUP_GOOGLE" = "Sign up with Google";
+
+
+

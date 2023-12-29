@@ -38,6 +38,15 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+      configureViews()
+    }
+    
+    func configureViews() {
+        languageLabel.text = "LANGUAGE".localized()
+    }
+
+    
     @objc func dismissView() {
       self.dismiss(animated: true, completion: nil)
     }

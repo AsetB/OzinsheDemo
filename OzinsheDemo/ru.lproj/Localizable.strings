@@ -6,5 +6,32 @@
   
 */
 
+"PROFILE" = "Профиль";
 "MY_PROFILE" = "Мой профиль";
 "LANGUAGE" = "Язык";
+"PERSONAL_DATA" = "Личные данные";
+"EDIT" = "Править";
+"CHANGE_PASSWORD" = "Поменять пароль";
+"TERMS_AND_CONDITIONS" = "Условия и положения";
+"ANNOUNCEMENT" = "Объявление";
+"DARK_MODE" = "Темный режим";
+"YOUR_NAME" = "Ваше имя";
+"TELEPHONE" = "Телефон";
+"DATE_OF_BIRTH" = "Дата рождения";
+"SAVE_CHANGES" = "Сохранить изменения";
+"EXIT" = "Выход";
+"CONFIRM_EXIT_FROM_ACCOUNT" = "Вы действительно хотите выйти из аккаунта?";
+"YES_EXIT" = "Да, выйти";
+"NO" = "Нет";
+"YOUR_PASSWORD" = "Ваш пароль";
+"REPEAT_PASSWORD" = "Повторите пароль";
+"HELLO" = "Привет";
+"LOGIN_INTO_ACCOUNT" = "Войдите в аккаунт";
+"PASSWORD" = "Пароль";
+"YOUR_EMAIL" = "Ваш email";
+"FORGOT_YOUR_PASSWORD" = "Забыли пароль?";
+"LOGIN" = "Войти";
+"NO_ACCOUNT_SIGN_UP" = "Нет аккаунта? Регистрация";
+"OR" = "Или";
+"SIGNUP_APPLE" = "Зарегистрируйтесь с Apple ID";
+"SIGNUP_GOOGLE" = "Зарегистрируйтесь с Google";
