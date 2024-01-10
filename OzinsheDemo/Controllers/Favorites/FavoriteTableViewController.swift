@@ -6,19 +6,87 @@
 //
 
 import UIKit
+import SwiftyJSON
+import SVProgressHUD
+import Alamofire
+import Localize_Swift
 
 class FavoriteTableViewController: UITableViewController {
 
-  var arrayFavorites = ["image1", "image2", "image3"]
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    var arrayFavorites: [Movie] = []
+    var isLoading = false
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.title = "LIST".localized()
+        downloadFavorites()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        
+        tableView.addSubview(refreshControl!)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @objc func handleRefresh() {
+        if !isLoading {
+            isLoading = true
+            arrayFavorites.removeAll()
+            tableView.reloadData()
+            downloadFavorites()
+        }
+    }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        downloadFavorites()
+//    }
+    
+    func downloadFavorites() {
+        SVProgressHUD.show()
+        
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(Storage.sharedInstance.accessToken)"]
+        
+        AF.request(URLs.FAVORITE_URL, method: .get, headers: headers).responseData { response in
+            
+            SVProgressHUD.dismiss()
+            
+            self.isLoading = false
+            self.refreshControl?.endRefreshing()
+            
+            var resultString = ""
+            if let data = response.data {
+                resultString = String(data: data, encoding: .utf8)!
+                print(resultString)
+            }
+            
+            if response.response?.statusCode == 200 {
+                let json = JSON(response.data!)
+                print("JSON: \(json)")
+                
+                if let array = json.array {
+                    for item in array {
+                        let movie = Movie(json: item)
+                        self.arrayFavorites.append(movie)
+                    }
+                    self.tableView.reloadData()
+                } else {
+                    SVProgressHUD.showError(withStatus: "CONNECTION_ERROR")
+                }
+            } else {
+                var ErrorString = "CONNECTION_ERROR"
+                if let sCode = response.response?.statusCode {
+                    ErrorString = ErrorString + " \(sCode)"
+                }
+                ErrorString = ErrorString + " \(resultString)"
+                SVProgressHUD.showError(withStatus: "\(ErrorString)")
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -38,7 +106,7 @@ class FavoriteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MovieTableViewCell
 
         // Configure the cell...
-      cell.setData(movie: arrayFavorites[indexPath.row])
+        cell.setData(movie: arrayFavorites[indexPath.row])
 
         return cell
     }

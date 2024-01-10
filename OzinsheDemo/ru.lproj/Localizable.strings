@@ -31,7 +31,13 @@
 "YOUR_EMAIL" = "Ваш email";
 "FORGOT_YOUR_PASSWORD" = "Забыли пароль?";
 "LOGIN" = "Войти";
-"NO_ACCOUNT_SIGN_UP" = "Нет аккаунта? Регистрация";
+"NO_ACCOUNT" = "Нет аккаунта?";
+"GOT_ACCOUNT" = "У вас есть аккаунт?";
 "OR" = "Или";
 "SIGNUP_APPLE" = "Зарегистрируйтесь с Apple ID";
 "SIGNUP_GOOGLE" = "Зарегистрируйтесь с Google";
+"SIGN_UP" = "Регистрация";
+"FILL_IN_DATA" = "Заполните данные";
+"PASS_NOT_MATCH" = "Пароли не совпадают";
+"PASS_CHANGED" = "Пароль успешно изменен";
+"LIST" = "Список";

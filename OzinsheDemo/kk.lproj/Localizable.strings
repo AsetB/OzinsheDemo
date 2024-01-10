@@ -32,7 +32,13 @@
 "YOUR_EMAIL" = "Сіздің email";
 "FORGOT_YOUR_PASSWORD" = "Құпия сөзді ұмыттыңыз ба?";
 "LOGIN" = "Кіру";
-"NO_ACCOUNT_SIGN_UP" = "Аккаунтыныз жоқ па? Тіркелу";
+"NO_ACCOUNT" = "Аккаунтыныз жоқ па?";
+"GOT_ACCOUNT" = "Сізде аккаунт бар ма?";
 "OR" = "Немесе";
 "SIGNUP_APPLE" = "Apple ID-мен тіркеліңіз";
 "SIGNUP_GOOGLE" = "Google-мен тіркеліңіз";
+"SIGN_UP" = "Тіркелу";
+"FILL_IN_DATA" = "Деректерді толтырыңыз";
+"PASS_NOT_MATCH" = "Құпия сөздер бірдей емес";
+"PASS_CHANGED" = "Құпия сөз сәтті өзгертілді";
+"LIST" = "Тізім";

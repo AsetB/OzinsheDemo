@@ -30,11 +30,14 @@
 "PASSWORD" = "Password";
 "YOUR_EMAIL" = "Your email";
 "FORGOT_YOUR_PASSWORD" = "Forgot your password?";
-"LOGIN" = "Log in";
-"NO_ACCOUNT_SIGN_UP" = "No account? Sign up";
+"LOGIN" = "Sign in";
+"NO_ACCOUNT" = "No account?";
+"GOT_ACCOUNT" = "Do you have an account?";
 "OR" = "Or";
 "SIGNUP_APPLE" = "Sign up with an Apple ID";
 "SIGNUP_GOOGLE" = "Sign up with Google";
-
-
-
+"SIGN_UP" = "Sign up";
+"FILL_IN_DATA" = "Fill in the data";
+"PASS_NOT_MATCH" = "Passwords don't match";
+"PASS_CHANGED" = "The password has been successfully changed";
+"LIST" = "List";

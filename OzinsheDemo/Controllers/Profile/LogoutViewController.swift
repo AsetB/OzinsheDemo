@@ -54,6 +54,21 @@ class LogoutViewController: UIViewController, UIGestureRecognizerDelegate {
         confirmNoExitButton.layer.cornerRadius = 12
     }
 
+    @IBAction func logoutActionButton(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "accessToken")
+        
+        let rootViewController = self.storyboard?.instantiateViewController(identifier: "SigninNavigationViewController") as! UINavigationController
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = rootViewController
+        appDelegate.window?.makeKeyAndVisible()
+    }
+    
+    @IBAction func cancelLogout(_ sender: Any) {
+        dismissView()
+    }
+    
+    
     /*
     // MARK: - Navigation
 
