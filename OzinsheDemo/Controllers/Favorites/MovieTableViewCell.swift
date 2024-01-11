@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import Localize_Swift
 
 class MovieTableViewCell: UITableViewCell {
 
@@ -14,7 +15,11 @@ class MovieTableViewCell: UITableViewCell {
   @IBOutlet weak var yearLabel: UILabel!
   @IBOutlet weak var posterImageView: UIImageView!
   @IBOutlet weak var playView: UIView!
-  
+    @IBOutlet weak var playLabel: UILabel!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         posterImageView.layer.cornerRadius = 8
@@ -32,6 +37,7 @@ class MovieTableViewCell: UITableViewCell {
       
       nameLabel.text = movie.name
       yearLabel.text = "\(movie.year)"
+      playLabel.text = "PLAY".localized()
       
       for item in movie.genres {
           yearLabel.text = yearLabel.text! + " • " + item.name

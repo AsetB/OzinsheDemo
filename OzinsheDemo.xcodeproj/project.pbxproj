@@ -10,6 +10,7 @@
 		0A507A1707F63798A028F83C /* Pods_OzinsheDemo_OzinsheDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8F3D98F772DB9A8E1A5227 /* Pods_OzinsheDemo_OzinsheDemoUITests.framework */; };
 		28B8C20CF74B1A4AFDC8FB87 /* Pods_OzinsheDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE068BA3B0029A4C70EFA71 /* Pods_OzinsheDemo.framework */; };
 		DA65A7287DAFA92AFB83A235 /* Pods_OzinsheDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D3EBD2B9601A46A32F9E7A /* Pods_OzinsheDemoTests.framework */; };
+		DB0D77CA2B4FC960001E8BF7 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D77C92B4FC960001E8BF7 /* CategoryTableViewController.swift */; };
 		DB0FEA1B2B48271B0075614C /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FEA1A2B48271B0075614C /* URLs.swift */; };
 		DB0FEA1D2B482D370075614C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FEA1C2B482D370075614C /* Storage.swift */; };
 		DB0FEA1F2B4AAB0C0075614C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FEA1E2B4AAB0C0075614C /* RegisterViewController.swift */; };
@@ -37,6 +38,8 @@
 		DBB4DC862B345A1400E6D192 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4DC852B345A1400E6D192 /* LogoutViewController.swift */; };
 		DBB4DC882B345F5500E6D192 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4DC872B345F5500E6D192 /* ChangePasswordViewController.swift */; };
 		DBDA8AB72B4D62490020C9C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA8AB62B4D62490020C9C6 /* User.swift */; };
+		DBDA8AB92B4EA0E30020C9C6 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBDA8AB82B4EA0E30020C9C6 /* MovieCell.xib */; };
+		DBDA8ABC2B4EAF860020C9C6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA8ABB2B4EAF860020C9C6 /* SearchViewController.swift */; };
 		DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF780BC2B074BE2005DA017 /* TabBarController.swift */; };
 		DBF780C72B077016005DA017 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */; };
 		DBF780C82B077016005DA017 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */; };
@@ -72,6 +75,7 @@
 		7E06FB8E67EC2AB1EF699561 /* Pods-OzinsheDemo-OzinsheDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo-OzinsheDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo-OzinsheDemoUITests/Pods-OzinsheDemo-OzinsheDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E632C1E3421F62741FBDE60 /* Pods-OzinsheDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-OzinsheDemoTests/Pods-OzinsheDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D1A8C4632A91D247DA4E0D3 /* Pods-OzinsheDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.release.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DB0D77C92B4FC960001E8BF7 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		DB0FEA1A2B48271B0075614C /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		DB0FEA1C2B482D370075614C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		DB0FEA1E2B4AAB0C0075614C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		DBB4DC852B345A1400E6D192 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		DBB4DC872B345F5500E6D192 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		DBDA8AB62B4D62490020C9C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DBDA8AB82B4EA0E30020C9C6 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		DBDA8ABB2B4EAF860020C9C6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DBF780BC2B074BE2005DA017 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
@@ -276,6 +282,7 @@
 			children = (
 				DBF780CC2B0D1D5B005DA017 /* FavoriteTableViewController.swift */,
 				DBF780CE2B0D1E7F005DA017 /* MovieTableViewCell.swift */,
+				DBDA8AB82B4EA0E30020C9C6 /* MovieCell.xib */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -292,6 +299,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		DBDA8ABA2B4EAEED0020C9C6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DBDA8ABB2B4EAF860020C9C6 /* SearchViewController.swift */,
+				DB0D77C92B4FC960001E8BF7 /* CategoryTableViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		DBF780BE2B076E02005DA017 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +322,7 @@
 		DBF780CB2B0D1CFE005DA017 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DBDA8ABA2B4EAEED0020C9C6 /* Search */,
 				DB4CDBBC2B35AEAD007ECDBF /* LoginViewController.swift */,
 				DB0FEA1E2B4AAB0C0075614C /* RegisterViewController.swift */,
 				DBC90C902B46D52200744C1C /* Profile */,
@@ -433,6 +450,7 @@
 				DBF780C72B077016005DA017 /* SF-Pro-Display-Bold.otf in Resources */,
 				DB4F1CA62AF3AE150086DFD5 /* Main.storyboard in Resources */,
 				DB945CA32B2B1FA0007C57BD /* Localizable.strings in Resources */,
+				DBDA8AB92B4EA0E30020C9C6 /* MovieCell.xib in Resources */,
 				DBF780CA2B077016005DA017 /* SF-Pro-Display-Regular.otf in Resources */,
 				DBF780C82B077016005DA017 /* SF-Pro-Display-Medium.otf in Resources */,
 			);
@@ -579,7 +597,9 @@
 				DB4362692B30630B00285B5A /* Enums.swift in Sources */,
 				DB0FEA1F2B4AAB0C0075614C /* RegisterViewController.swift in Sources */,
 				DB0FEA1D2B482D370075614C /* Storage.swift in Sources */,
+				DB0D77CA2B4FC960001E8BF7 /* CategoryTableViewController.swift in Sources */,
 				DB4CDBBD2B35AEAD007ECDBF /* LoginViewController.swift in Sources */,
+				DBDA8ABC2B4EAF860020C9C6 /* SearchViewController.swift in Sources */,
 				DB4F1CA12AF3AE150086DFD5 /* SceneDelegate.swift in Sources */,
 				DBDA8AB72B4D62490020C9C6 /* User.swift in Sources */,
 				DB0FEA232B4C045F0075614C /* Screenshot.swift in Sources */,

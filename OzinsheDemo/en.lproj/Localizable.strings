@@ -41,3 +41,8 @@
 "PASS_NOT_MATCH" = "Passwords don't match";
 "PASS_CHANGED" = "The password has been successfully changed";
 "LIST" = "List";
+"SEARCH" = "Search";
+"CATEGORIES" = "Categories";
+"SEARCH_RESULTS" = "Search results";
+"PLAY" = "Play";
+

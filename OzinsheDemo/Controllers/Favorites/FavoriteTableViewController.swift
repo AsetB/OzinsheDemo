@@ -12,6 +12,7 @@ import Alamofire
 import Localize_Swift
 
 class FavoriteTableViewController: UITableViewController {
+    
 
     @IBOutlet weak var navigationBar: UINavigationItem!
     var arrayFavorites: [Movie] = []
@@ -20,18 +21,25 @@ class FavoriteTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.title = "LIST".localized()
-        downloadFavorites()
         
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
         
         tableView.addSubview(refreshControl!)
+        
+        let MovieCellnib = UINib(nibName: "MovieCell", bundle: nil)
+        tableView.register(MovieCellnib, forCellReuseIdentifier: "MovieCell")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        downloadFavorites()
+        navigationBar.title = "LIST".localized()
     }
     
     @objc func handleRefresh() {
@@ -48,6 +56,7 @@ class FavoriteTableViewController: UITableViewController {
 //    }
     
     func downloadFavorites() {
+        self.arrayFavorites.removeAll()
         SVProgressHUD.show()
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(Storage.sharedInstance.accessToken)"]
@@ -103,7 +112,7 @@ class FavoriteTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MovieTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
 
         // Configure the cell...
         cell.setData(movie: arrayFavorites[indexPath.row])

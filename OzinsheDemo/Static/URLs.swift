@@ -15,5 +15,8 @@ class URLs {
     static let CHANGE_PASS_URL = BASE_URL + "user/profile/changePassword"
     static let GET_PROFILE_URL = BASE_URL + "user/profile"
     static let UPDATE_PROFILE_URL = BASE_URL + "user/profile/"
+    static let CATEGORIES_URL = BASE_URL + "categories"
+    static let MOVIES_BY_CATEGORY_URL = BASE_URL + "movies/page"
+    static let SEARCH_MOVIES_URL = BASE_URL + "movies/search"
 }
 
