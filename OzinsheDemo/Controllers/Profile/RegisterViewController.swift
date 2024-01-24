@@ -38,10 +38,6 @@ class RegisterViewController: UIViewController {
         let password = passTextfield.text!
         let repeatedPass = repeatPassTextfield.text!
         
-        if email.isEmpty || password.isEmpty {
-            return
-        }
-        
         if password == repeatedPass {
             
             SVProgressHUD.show()

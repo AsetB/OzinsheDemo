@@ -108,7 +108,7 @@ class ProfileViewController: UIViewController, LanguageProtocol {
                 print(ErrorString)
             }
         }
-        emailLabel.text = UserDefaults.standard.string(forKey: "email")
+        //emailLabel.text = UserDefaults.standard.string(forKey: "email")
     }
     
     func configureViews() {
@@ -121,6 +121,7 @@ class ProfileViewController: UIViewController, LanguageProtocol {
         darkModeButton.setTitle("DARK_MODE".localized(), for: .normal)
         termsButton.setTitle("TERMS_AND_CONDITIONS".localized(), for: .normal)
         navigationBar.title = "PROFILE".localized()
+        emailLabel.text = UserDefaults.standard.string(forKey: "email")
         
         switch Localize.currentLanguage() {
         case "ru": languageLabel.text = "Русский"

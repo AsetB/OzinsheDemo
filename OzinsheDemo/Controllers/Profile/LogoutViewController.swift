@@ -56,6 +56,10 @@ class LogoutViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBAction func logoutActionButton(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "accessToken")
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "birthDate")
+        UserDefaults.standard.removeObject(forKey: "phoneNumber")
+        
         
         let rootViewController = self.storyboard?.instantiateViewController(identifier: "SigninNavigationViewController") as! UINavigationController
         

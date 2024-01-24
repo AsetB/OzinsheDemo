@@ -45,4 +45,9 @@
 "CATEGORIES" = "Categories";
 "SEARCH_RESULTS" = "Search results";
 "PLAY" = "Play";
+"CONTINUE_PLAY" = "Continue to watch";
+"AGE_CATEGORY" = "According to the age";
+"CHOOSE_GENRE" = "Choose a genre";
+"ALL" = "All";
+"WRONG_FORMAT" = "Wrong format";
 

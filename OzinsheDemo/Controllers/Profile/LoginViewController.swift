@@ -24,6 +24,11 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
     @IBOutlet weak var signupLabel: UILabel!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var errorLabelTopToEmailTFBottom: NSLayoutConstraint!
+    @IBOutlet weak var passLabelTopToEmailTFBottom: NSLayoutConstraint!
+    @IBOutlet weak var errorLabelBottomToPassLabelTop: NSLayoutConstraint!
+    
     
     
     
@@ -42,15 +47,11 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
         emailTextField.layer.borderWidth = 1
         emailTextField.layer.borderColor = UIColor(red: 229/255, green: 235/255, blue: 240/255, alpha: 1.0).cgColor
         emailTextField.placeholder = "YOUR_EMAIL".localized()
-        //emailTextField.setIcon(UIImage(imageLiteralResourceName: "Message"))
         
         passTextField.layer.cornerRadius = 12
         passTextField.layer.borderWidth = 1
         passTextField.layer.borderColor = UIColor(red: 229/255, green: 235/255, blue: 240/255, alpha: 1.0).cgColor
         passTextField.placeholder = "YOUR_PASSWORD".localized()
-        //passTextField.tintColor = UIColor.lightGray
-        //passTextField.tintColor = UIColor(red: 156/255, green: 163/255, blue: 175/255, alpha: 1.0)
-        //passTextField.setIcon(UIImage(imageLiteralResourceName: "Password"))
         
         enterButton.layer.cornerRadius = 12
         
@@ -68,7 +69,9 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
         signupLabel.text = "NO_ACCOUNT".localized()
         signupButton.setTitle("SIGN_UP".localized(), for: .normal)
         passwordLabel.text = "PASSWORD".localized()
-    
+        
+        errorLabel.text = "WRONG_FORMAT".localized()
+        errorLabel.isHidden = true
     }
     
     func hideKeyboardWhenTappedAround() {
@@ -81,6 +84,30 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
         view.endEditing(true)
     }
     
+    @IBAction func emailTextfieldEditingChange(_ sender: Any) {
+        if !emailTextField.text!.isEmail() {
+            errorLabel.isHidden = false
+            errorLabelTopToEmailTFBottom.priority = .defaultHigh
+            passLabelTopToEmailTFBottom.priority = .defaultLow
+            errorLabelBottomToPassLabelTop.priority = .defaultHigh
+            emailTextField.layer.borderColor = UIColor(red: 255/255, green: 64/255, blue: 43/255, alpha: 1.0).cgColor
+        } else {
+            errorLabel.isHidden = true
+            errorLabelTopToEmailTFBottom.priority = .defaultLow
+            passLabelTopToEmailTFBottom.priority = .defaultHigh
+            errorLabelBottomToPassLabelTop.priority = .defaultLow
+            emailTextField.layer.borderColor = UIColor(red: 229/255, green: 235/255, blue: 240/255, alpha: 1.0).cgColor
+        }
+        
+        if emailTextField.text!.isEmpty {
+            errorLabel.isHidden = true
+            errorLabelTopToEmailTFBottom.priority = .defaultLow
+            passLabelTopToEmailTFBottom.priority = .defaultHigh
+            errorLabelBottomToPassLabelTop.priority = .defaultLow
+            emailTextField.layer.borderColor = UIColor(red: 229/255, green: 235/255, blue: 240/255, alpha: 1.0).cgColor
+        }
+    }
+    
     @IBAction func enterButtonAction(_ sender: Any) {
         let email = emailTextField.text!
         let password = passTextField.text!
@@ -89,39 +116,39 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
             return
         }
         
-        SVProgressHUD.show()
-        
-        let parameters = ["email": email, "password": password]
-        
-        AF.request(URLs.SIGN_IN_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseData { response in
+            SVProgressHUD.show()
             
-            SVProgressHUD.dismiss()
-            var resultString = ""
-            if let data = response.data {
-                resultString = String(data: data, encoding: .utf8)!
-                print(resultString)
-            }
+            let parameters = ["email": email, "password": password]
             
-            if response.response?.statusCode == 200 {
-                let json = JSON(response.data!)
-                print("JSON: \(json)")
+            AF.request(URLs.SIGN_IN_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseData { response in
                 
-                if let token = json["accessToken"].string {
-                    Storage.sharedInstance.accessToken = token
-                    UserDefaults.standard.set(token, forKey: "accessToken")
-                    self.startApp()
+                SVProgressHUD.dismiss()
+                var resultString = ""
+                if let data = response.data {
+                    resultString = String(data: data, encoding: .utf8)!
+                    print(resultString)
+                }
+                
+                if response.response?.statusCode == 200 {
+                    let json = JSON(response.data!)
+                    print("JSON: \(json)")
+                    
+                    if let token = json["accessToken"].string {
+                        Storage.sharedInstance.accessToken = token
+                        UserDefaults.standard.set(token, forKey: "accessToken")
+                        self.startApp()
+                    } else {
+                        SVProgressHUD.showError(withStatus: "CONNECTION_ERROR")
+                    }
                 } else {
-                    SVProgressHUD.showError(withStatus: "CONNECTION_ERROR")
+                    var ErrorString = "CONNECTION_ERROR"
+                    if let sCode = response.response?.statusCode {
+                        ErrorString = ErrorString + " \(sCode)"
+                    }
+                    ErrorString = ErrorString + " \(resultString)"
+                    SVProgressHUD.showError(withStatus: "\(ErrorString)")
                 }
-            } else {
-                var ErrorString = "CONNECTION_ERROR"
-                if let sCode = response.response?.statusCode {
-                    ErrorString = ErrorString + " \(sCode)"
-                }
-                ErrorString = ErrorString + " \(resultString)"
-                SVProgressHUD.showError(withStatus: "\(ErrorString)")
             }
-        }
     }
     
     @IBAction func goToSignupButton(_ sender: Any) {
@@ -153,6 +180,10 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
     
     @IBAction func textFieldEditingDidEdn(_ sender: TextFieldWithPadding) {
         sender.layer.borderColor = UIColor(red: 229/255, green: 235/255, blue: 240/255, alpha: 1.0).cgColor
+        errorLabel.isHidden = true
+        errorLabelTopToEmailTFBottom.priority = .defaultLow
+        passLabelTopToEmailTFBottom.priority = .defaultHigh
+        errorLabelBottomToPassLabelTop.priority = .defaultLow
     }
     
     
