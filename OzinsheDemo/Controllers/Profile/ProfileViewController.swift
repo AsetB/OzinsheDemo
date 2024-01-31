@@ -28,6 +28,7 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     @IBOutlet weak var navigationBar: UINavigationItem!
     
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var darkModeSwitch: UISwitch!
     
     
     override func viewDidLoad() {
@@ -129,6 +130,12 @@ class ProfileViewController: UIViewController, LanguageProtocol {
         case "kk": languageLabel.text = "Қазақша"
         default: languageLabel.text = "Қазақша"
         }
+        
+        if UserDefaults.standard.string(forKey: "Theme") == "Dark" {
+            darkModeSwitch.setOn(true, animated: false)
+        } else {
+            darkModeSwitch.setOn(false, animated: false)
+        }
     }
     
     @IBAction func languageShow(_ sender: Any) {
@@ -161,6 +168,18 @@ class ProfileViewController: UIViewController, LanguageProtocol {
         present(exitVC, animated: true, completion: nil)
     }
     
+    @IBAction func switchDarkMode(_ sender: UISwitch) {
+        let defaults = UserDefaults.standard
+        if let window = view.window {
+            if sender.isOn {
+                window.overrideUserInterfaceStyle = .dark
+                defaults.set("Dark", forKey: "Theme")
+            } else {
+                window.overrideUserInterfaceStyle = .light
+                defaults.set("Light", forKey: "Theme")
+            }
+        }
+    }
     
     
     /*

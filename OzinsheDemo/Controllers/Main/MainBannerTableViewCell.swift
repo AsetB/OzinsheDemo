@@ -11,7 +11,7 @@ class MainBannerTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var collectionView: UICollectionView!
     var mainMovie = MainMovies()
-    
+    weak var delegate: MovieProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -49,5 +49,10 @@ class MainBannerTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as! BannerCollectionViewCell
         cell.setData(bannerMovie: mainMovie.bannerMovie[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        delegate?.movieDidSelect(movie: mainMovie.bannerMovie[indexPath.row].movie)
     }
 }

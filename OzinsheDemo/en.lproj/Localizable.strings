@@ -50,4 +50,16 @@
 "CHOOSE_GENRE" = "Choose a genre";
 "ALL" = "All";
 "WRONG_FORMAT" = "Wrong format";
-
+"DETAILS" = "Details";
+"DIRECTOR" = "Director:";
+"PRODUCER" = "Producer:";
+"SECTIONS" = "Sections";
+"SCREENSHOTS" = "Screenshots";
+"SIMILAR_SERIES" = "Similar series";
+"SEASON" = " season, ";
+"SEASON_IN_SERIES" = " season";
+"SERIES" = " episode";
+"ADD_FAVORITE" = "Add to favorites";
+"SHARE" = "Share";
+"HIDE" = "Hide";
+"EPISODE" = " episode";

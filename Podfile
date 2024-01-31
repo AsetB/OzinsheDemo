@@ -11,6 +11,7 @@ target 'OzinsheDemo' do
   pod 'SDWebImage'
   pod 'SVProgressHUD'
   pod 'SwiftyJSON'
+  pod 'YouTubePlayer'
 
   target 'OzinsheDemoTests' do
     inherit! :search_paths

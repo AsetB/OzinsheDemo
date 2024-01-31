@@ -24,13 +24,16 @@
 		DB1997D52B591D2500344560 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1997D42B591D2500344560 /* BannerCollectionViewCell.swift */; };
 		DB1997D72B59260900344560 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1997D62B59260900344560 /* HistoryTableViewCell.swift */; };
 		DB1997D92B5929CC00344560 /* GenreAgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1997D82B5929CC00344560 /* GenreAgeTableViewCell.swift */; };
+		DB2AFAB02B638D9D00884BA6 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAAF2B638D9D00884BA6 /* MovieInfoViewController.swift */; };
+		DB2AFAB22B638DDC00884BA6 /* MoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAB12B638DDC00884BA6 /* MoviePlayerViewController.swift */; };
+		DB2AFAB52B638E5300884BA6 /* SeasonsSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAB42B638E5300884BA6 /* SeasonsSeriesViewController.swift */; };
+		DB2AFAB72B63CECC00884BA6 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAB62B63CECC00884BA6 /* Season.swift */; };
+		DB3D42DD2B624A710017C137 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D42DC2B624A710017C137 /* GradientView.swift */; };
 		DB4094C02B35FB6D0001B505 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4094BF2B35FB6D0001B505 /* UIViewController + Extensions.swift */; };
-		DB4362692B30630B00285B5A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4362682B30630B00285B5A /* Enums.swift */; };
 		DB43626B2B31A18900285B5A /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43626A2B31A18900285B5A /* ProfileEditViewController.swift */; };
 		DB4CDBBD2B35AEAD007ECDBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CDBBC2B35AEAD007ECDBF /* LoginViewController.swift */; };
 		DB4F1C9F2AF3AE150086DFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1C9E2AF3AE150086DFD5 /* AppDelegate.swift */; };
 		DB4F1CA12AF3AE150086DFD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CA02AF3AE150086DFD5 /* SceneDelegate.swift */; };
-		DB4F1CA32AF3AE150086DFD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CA22AF3AE150086DFD5 /* ViewController.swift */; };
 		DB4F1CA62AF3AE150086DFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4F1CA42AF3AE150086DFD5 /* Main.storyboard */; };
 		DB4F1CA82AF3AE160086DFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4F1CA72AF3AE160086DFD5 /* Assets.xcassets */; };
 		DB4F1CAB2AF3AE160086DFD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4F1CA92AF3AE160086DFD5 /* LaunchScreen.storyboard */; };
@@ -98,14 +101,17 @@
 		DB1997D42B591D2500344560 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB1997D62B59260900344560 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		DB1997D82B5929CC00344560 /* GenreAgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreAgeTableViewCell.swift; sourceTree = "<group>"; };
+		DB2AFAAF2B638D9D00884BA6 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
+		DB2AFAB12B638DDC00884BA6 /* MoviePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePlayerViewController.swift; sourceTree = "<group>"; };
+		DB2AFAB42B638E5300884BA6 /* SeasonsSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsSeriesViewController.swift; sourceTree = "<group>"; };
+		DB2AFAB62B63CECC00884BA6 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		DB3D42DC2B624A710017C137 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		DB4094BF2B35FB6D0001B505 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
-		DB4362682B30630B00285B5A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		DB43626A2B31A18900285B5A /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		DB4CDBBC2B35AEAD007ECDBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB4F1C9B2AF3AE150086DFD5 /* OzinsheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzinsheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4F1C9E2AF3AE150086DFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4F1CA02AF3AE150086DFD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB4F1CA22AF3AE150086DFD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB4F1CA52AF3AE150086DFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB4F1CA72AF3AE160086DFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4F1CAA2AF3AE160086DFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -190,20 +196,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DB2AFAB32B638DF100884BA6 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				DB2AFAB12B638DDC00884BA6 /* MoviePlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		DB3D42DB2B6229510017C137 /* MovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				DBF780CE2B0D1E7F005DA017 /* MovieTableViewCell.swift */,
+				DBDA8AB82B4EA0E30020C9C6 /* MovieCell.xib */,
+			);
+			path = MovieCell;
+			sourceTree = "<group>";
+		};
 		DB4094BE2B35FB450001B505 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				DB4094BF2B35FB6D0001B505 /* UIViewController + Extensions.swift */,
+				DB3D42DC2B624A710017C137 /* GradientView.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		DB4362672B3062DB00285B5A /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				DB4362682B30630B00285B5A /* Enums.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DB4F1C922AF3AE150086DFD5 = {
@@ -236,7 +252,6 @@
 				DBC90C8E2B46D4FC00744C1C /* Static */,
 				DB4094BE2B35FB450001B505 /* Extensions */,
 				DBF780BE2B076E02005DA017 /* Fonts */,
-				DB4362672B3062DB00285B5A /* Helpers */,
 				DBF780CB2B0D1CFE005DA017 /* Controllers */,
 				DB4F1CA02AF3AE150086DFD5 /* SceneDelegate.swift */,
 				DB4F1C9E2AF3AE150086DFD5 /* AppDelegate.swift */,
@@ -277,6 +292,7 @@
 				DBDA8AB62B4D62490020C9C6 /* User.swift */,
 				DB5C63192B51354E00F78E8F /* MainMovies.swift */,
 				DB1997D02B59182500344560 /* BannerMovie.swift */,
+				DB2AFAB62B63CECC00884BA6 /* Season.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,8 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				DBF780CC2B0D1D5B005DA017 /* FavoriteTableViewController.swift */,
-				DBF780CE2B0D1E7F005DA017 /* MovieTableViewCell.swift */,
-				DBDA8AB82B4EA0E30020C9C6 /* MovieCell.xib */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -343,6 +357,22 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		DBEAFBEE2B67A7510004DAFD /* MovieInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DB2AFAAF2B638D9D00884BA6 /* MovieInfoViewController.swift */,
+			);
+			path = MovieInfo;
+			sourceTree = "<group>";
+		};
+		DBEAFBEF2B67A7690004DAFD /* SeasonsSeries */ = {
+			isa = PBXGroup;
+			children = (
+				DB2AFAB42B638E5300884BA6 /* SeasonsSeriesViewController.swift */,
+			);
+			path = SeasonsSeries;
+			sourceTree = "<group>";
+		};
 		DBF780BE2B076E02005DA017 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,12 +388,15 @@
 			isa = PBXGroup;
 			children = (
 				DBCA13402B613785009246E0 /* OnboardingViewController.swift */,
+				DBF780BC2B074BE2005DA017 /* TabBarController.swift */,
 				DBD51C5F2B552367003BECC4 /* Main */,
+				DB3D42DB2B6229510017C137 /* MovieCell */,
+				DBEAFBEE2B67A7510004DAFD /* MovieInfo */,
+				DBEAFBEF2B67A7690004DAFD /* SeasonsSeries */,
 				DBDA8ABA2B4EAEED0020C9C6 /* Search */,
 				DBC90C902B46D52200744C1C /* Profile */,
 				DBC90C8F2B46D51B00744C1C /* Favorites */,
-				DB4F1CA22AF3AE150086DFD5 /* ViewController.swift */,
-				DBF780BC2B074BE2005DA017 /* TabBarController.swift */,
+				DB2AFAB32B638DF100884BA6 /* Player */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -616,12 +649,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF780CD2B0D1D5B005DA017 /* FavoriteTableViewController.swift in Sources */,
-				DB4F1CA32AF3AE150086DFD5 /* ViewController.swift in Sources */,
 				DB0FEA212B4C018F0075614C /* Movie.swift in Sources */,
 				DBCA13412B613785009246E0 /* OnboardingViewController.swift in Sources */,
 				DB945CAB2B2C7A39007C57BD /* LanguageViewController.swift in Sources */,
 				DB1997D92B5929CC00344560 /* GenreAgeTableViewCell.swift in Sources */,
 				DBF780CF2B0D1E7F005DA017 /* MovieTableViewCell.swift in Sources */,
+				DB2AFAB22B638DDC00884BA6 /* MoviePlayerViewController.swift in Sources */,
 				DBB4DC862B345A1400E6D192 /* LogoutViewController.swift in Sources */,
 				DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */,
 				DB945CA92B2C6F19007C57BD /* ProfileViewController.swift in Sources */,
@@ -633,11 +666,14 @@
 				DBD51C612B55237F003BECC4 /* MainTableViewCell.swift in Sources */,
 				DB4F1C9F2AF3AE150086DFD5 /* AppDelegate.swift in Sources */,
 				DBB4DC882B345F5500E6D192 /* ChangePasswordViewController.swift in Sources */,
+				DB2AFAB52B638E5300884BA6 /* SeasonsSeriesViewController.swift in Sources */,
 				DB0FEA1B2B48271B0075614C /* URLs.swift in Sources */,
 				DB4094C02B35FB6D0001B505 /* UIViewController + Extensions.swift in Sources */,
-				DB4362692B30630B00285B5A /* Enums.swift in Sources */,
+				DB2AFAB72B63CECC00884BA6 /* Season.swift in Sources */,
 				DB1997D52B591D2500344560 /* BannerCollectionViewCell.swift in Sources */,
+				DB2AFAB02B638D9D00884BA6 /* MovieInfoViewController.swift in Sources */,
 				DB0FEA1F2B4AAB0C0075614C /* RegisterViewController.swift in Sources */,
+				DB3D42DD2B624A710017C137 /* GradientView.swift in Sources */,
 				DB0FEA1D2B482D370075614C /* Storage.swift in Sources */,
 				DB1997D32B591AE400344560 /* MainBannerTableViewCell.swift in Sources */,
 				DB0D77CA2B4FC960001E8BF7 /* CategoryTableViewController.swift in Sources */,

@@ -27,6 +27,7 @@ class OnboardingViewController: UIViewController, UICollectionViewDelegate, UICo
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -50,3 +50,16 @@
 "CHOOSE_GENRE" = "Выберите жанр";
 "ALL" = "Все";
 "WRONG_FORMAT" = "Неправильный формат";
+"DETAILS" = "Подробнее";
+"DIRECTOR" = "Режиссер:";
+"PRODUCER" = "Продюсер:";
+"SECTIONS" = "Разделы";
+"SCREENSHOTS" = "Скриншоты";
+"SIMILAR_SERIES" = "Похожие сериалы";
+"SEASON" = " сезон, ";
+"SEASON_IN_SERIES" = " сезон";
+"SERIES" = " серия";
+"ADD_FAVORITE" = "В избранное";
+"SHARE" = "Поделиться";
+"HIDE" = "Скрыть";
+"EPISODE" = " серия";

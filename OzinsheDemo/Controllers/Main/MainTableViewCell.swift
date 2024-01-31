@@ -9,12 +9,17 @@ import UIKit
 import SDWebImage
 import Localize_Swift
 
+protocol MovieProtocol: AnyObject {
+    func movieDidSelect(movie: Movie)
+}
+
 class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
         
     @IBOutlet weak var mainLabel: UILabel!//categoryNameLabel
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    weak var delegate: MovieProtocol?
     var mainMovie = MainMovies()
     
     override func awakeFromNib() {
@@ -74,12 +79,7 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-//        
-//        let categoryTableViewController = storyboard?.instantiateViewController(withIdentifier: "CategoryTableViewController") as! CategoryTableViewController
-//        categoryTableViewController.categoryID = categories[indexPath.row].id
-//        categoryTableViewController.categoryName = categories[indexPath.row].name
-//        
-//        navigationController?.show(categoryTableViewController, sender: self)
+        delegate?.movieDidSelect(movie: mainMovie.movies[indexPath.row])
     }
 
 }

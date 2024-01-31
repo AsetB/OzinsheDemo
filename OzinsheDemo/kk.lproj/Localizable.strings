@@ -51,3 +51,16 @@
 "AGE_CATEGORY" = "Жасына сәйкес";
 "ALL" = "Барлығы";
 "WRONG_FORMAT" = "Қате формат";
+"DETAILS" = "Толығырақ";
+"DIRECTOR" = "Режиссер:";
+"PRODUCER" = "Продюсер:";
+"SECTIONS" = "Бөлімдер";
+"SCREENSHOTS" = "Скриншоттар";
+"SIMILAR_SERIES" = "Ұқсас телехикаялар";
+"SEASON" = " сезон, ";
+"SEASON_IN_SERIES" = " сезон";
+"SERIES" = " серия";
+"ADD_FAVORITE" = "Тізімге қосу";
+"SHARE" = "Бөлісу";
+"HIDE" = "Жасыру";
+"EPISODE" = "-ші бөлім";

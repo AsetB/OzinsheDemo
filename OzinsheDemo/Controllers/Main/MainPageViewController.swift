@@ -10,7 +10,7 @@ import SVProgressHUD
 import SwiftyJSON
 import Alamofire
 
-class MainPageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainPageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MovieProtocol {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -314,17 +314,19 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         switch mainMovies[indexPath.row].cellType {
         case .mainBanner:
             return {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "mainBannerCell", for: indexPath) as! MainBannerTableViewCell
-            
-            cell.setData(mainMovie: mainMovies[indexPath.row])
-            return cell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "mainBannerCell", for: indexPath) as! MainBannerTableViewCell
+                
+                cell.setData(mainMovie: mainMovies[indexPath.row])
+                cell.delegate = self
+                return cell
             }()
         case .userHistory:
             return {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! HistoryTableViewCell
-            
-            cell.setData(mainMovie: mainMovies[indexPath.row])
-            return cell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! HistoryTableViewCell
+                
+                cell.setData(mainMovie: mainMovies[indexPath.row])
+                cell.delegate = self
+                return cell
             }()
         case .genre:
             return {
@@ -344,6 +346,7 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
             return {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! MainTableViewCell
                 cell.setData(mainMovie: mainMovies[indexPath.row])
+                cell.delegate = self
                 return cell
             }()
         }
@@ -375,5 +378,19 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         
         navigationController?.show(categoryTableViewController, sender: self)
     }
+    
+    // MARK: - MovieProtocol
+    func movieDidSelect(movie: Movie) {
+        let movieInfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as! MovieInfoViewController
+        movieInfoVC.movie = movie
+        navigationController?.show(movieInfoVC, sender: self)
+    }
+//    func movieDidSelect(movie: Movie) {
+//        let movieinfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as! MovieInfoViewController
+//        
+//        movieinfoVC.movie = movie
+//        
+//        navigationController?.show(movieinfoVC, sender: self)
+//    }
 
 }

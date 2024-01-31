@@ -7,6 +7,7 @@
 
 import UIKit
 
+//textfiled with image icon on the left
 extension UITextField {
     func setIcon(_ image: UIImage) {
         let iconView = UIImageView(frame:
@@ -20,6 +21,7 @@ extension UITextField {
     }
 }
 
+//adds padding to text inside TextField
 class TextFieldWithPadding: UITextField {
     var padding = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 16)
     
@@ -36,6 +38,7 @@ class TextFieldWithPadding: UITextField {
     }
 }
 
+//Telephone number mask
 extension String {
     func applyPatternOnNumbers(pattern: String, replacementCharacter: Character) -> String {
         var pureNumber = self.replacingOccurrences( of: "[^0-9]", with: "", options: .regularExpression)
@@ -68,6 +71,7 @@ extension ProfileEditViewController {
     }
 }
 
+//Checks email mask
 public let __firstpart = "[A-Z0-9a-z]([A-Z0-9a-z._%+-]{0,30}[A-Z0-9a-z])?"
 public let __serverpart = "([A-Z0-9a-z]([A-Z0-9a-z-]{0,30}[A-Z0-9a-z])?\\.){1,5}"
 public let __emailRegex = __firstpart + "@" + __serverpart + "[A-Za-z]{2,8}"
@@ -85,9 +89,20 @@ extension UITextField {
     }
 }
 
-
+//Page control with image
 class CustomPageControl: UIPageControl {
     override func draw(_ rect: CGRect) {
         self.setIndicatorImage(UIImage(named: "RectanglePC"), forPage: currentPage)
+    }
+}
+
+//For MovieInfo Description label maximum lines
+extension UILabel {
+    var maxNumberOfLines: Int {
+        let maxSize = CGSize(width: frame.size.width, height: CGFloat(MAXFLOAT))
+        let text = (self.text ?? "") as NSString
+        let textHeight = text.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil).height
+        let lineHeight = font.lineHeight
+        return Int(ceil(textHeight / lineHeight))
     }
 }

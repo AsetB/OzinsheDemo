@@ -124,6 +124,14 @@ class FavoriteTableViewController: UITableViewController {
     return 153
   }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movieinfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as! MovieInfoViewController
+        
+        movieinfoVC.movie = arrayFavorites[indexPath.row]
+        
+        navigationController?.show(movieinfoVC, sender: self)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

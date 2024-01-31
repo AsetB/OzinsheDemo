@@ -60,6 +60,8 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         searchButton.layer.cornerRadius = 12
         
+        clearButton.isHidden = true
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -139,6 +141,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
             movies.removeAll()
             tableView.reloadData()
             clearButton.isHidden = true
+            searchButton.setImage(UIImage(named: "searchButton"), for: .normal)
             return
         } else {
             topLabel.text = "SEARCH_RESULTS".localized()
@@ -147,6 +150,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
             tableViewToCollectionViewConstraint.priority = .defaultLow
             tableView.isHidden = false
             clearButton.isHidden = false
+            searchButton.setImage(UIImage(named: "SearchSelectedButton"), for: .normal)
         }
         
         SVProgressHUD.show()
