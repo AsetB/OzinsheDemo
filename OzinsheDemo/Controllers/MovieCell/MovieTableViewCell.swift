@@ -11,14 +11,11 @@ import Localize_Swift
 
 class MovieTableViewCell: UITableViewCell {
 
-  @IBOutlet weak var nameLabel: UILabel!
-  @IBOutlet weak var yearLabel: UILabel!
-  @IBOutlet weak var posterImageView: UIImageView!
-  @IBOutlet weak var playView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var playView: UIView!
     @IBOutlet weak var playLabel: UILabel!
-    
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,8 +25,6 @@ class MovieTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
   
   func setData(movie: Movie) {
@@ -42,18 +37,6 @@ class MovieTableViewCell: UITableViewCell {
       for item in movie.genres {
           yearLabel.text = yearLabel.text! + " • " + item.name
       }
-      
-//      for item in movie.genres.filter({ $0.name.count <= 16 }) {
-//          yearLabel.text = yearLabel.text! + " • " + item.name
-//      }
-
-//      for (index, item) in movie.genres.enumerated() {
-//          if index < 2 {
-//              yearLabel.text = yearLabel.text! + " • " + item.name
-//          } else {
-//              break
-//          }
-//      }
   }
 
 }

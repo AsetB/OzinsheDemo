@@ -22,8 +22,6 @@ class LogoutViewController: UIViewController, UIGestureRecognizerDelegate {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissView))
         tap.delegate = self
         view.addGestureRecognizer(tap)
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,7 +69,6 @@ class LogoutViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBAction func cancelLogout(_ sender: Any) {
         dismissView()
     }
-    
     
     /*
     // MARK: - Navigation

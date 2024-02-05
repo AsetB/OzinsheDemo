@@ -105,7 +105,4 @@ class OnboardingViewController: UIViewController, UICollectionViewDelegate, UICo
             }
         }
     }
-    
-    
-
 }

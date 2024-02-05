@@ -33,8 +33,6 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
         configureViews()
         downloadCategories()
         hideKeyboardWhenTappedAround()
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -251,6 +249,14 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 153
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movieinfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as! MovieInfoViewController
+        
+        movieinfoVC.movie = movies[indexPath.row]
+        
+        navigationController?.show(movieinfoVC, sender: self)
     }
     
     func hideKeyboardWhenTappedAround() {

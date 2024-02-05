@@ -23,10 +23,7 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         
         addNavBarImage()
-        
         downloadMainBanners()
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -385,12 +382,5 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         movieInfoVC.movie = movie
         navigationController?.show(movieInfoVC, sender: self)
     }
-//    func movieDidSelect(movie: Movie) {
-//        let movieinfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as! MovieInfoViewController
-//        
-//        movieinfoVC.movie = movie
-//        
-//        navigationController?.show(movieinfoVC, sender: self)
-//    }
 
 }

@@ -13,6 +13,8 @@ class Screenshot {
     public var link: String = ""
 //    var fileId: Int = 0
 //    var movieId: Int = 0
+    init() {
+    }
     
     init(json: JSON) {
         if let data = json["id"].int {

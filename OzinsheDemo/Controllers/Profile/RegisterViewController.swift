@@ -29,8 +29,6 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         configureViews()
         hideKeyboardWhenTappedAround()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func registerActionButton(_ sender: Any) {

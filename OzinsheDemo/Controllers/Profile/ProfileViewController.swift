@@ -15,18 +15,13 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     @IBOutlet weak var myProfileLabel: UILabel!
     @IBOutlet weak var languageButton: UIButton!
     @IBOutlet weak var languageLabel: UILabel!
-    
     @IBOutlet weak var personalDataButton: UIButton!
     @IBOutlet weak var personalDataEditLabel: UILabel!
-    
     @IBOutlet weak var changePassButton: UIButton!
-    
     @IBOutlet weak var termsButton: UIButton!
     @IBOutlet weak var announcementButton: UIButton!
     @IBOutlet weak var darkModeButton: UIButton!
-    
     @IBOutlet weak var navigationBar: UINavigationItem!
-    
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var darkModeSwitch: UISwitch!
     
@@ -34,21 +29,6 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadProfileInfo()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        
-//        if Localize.currentLanguage() == "ru" {
-//            languageLabel.text = "Русский"
-//        }
-//        if Localize.currentLanguage() == "en" {
-//            languageLabel.text = "English"
-//        }
-//        if Localize.currentLanguage() == "kk" {
-//            languageLabel.text = "Қазақша"
-//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

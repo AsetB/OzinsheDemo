@@ -41,6 +41,8 @@
 		DB4F1CC02AF3AE160086DFD5 /* OzinsheDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CBF2AF3AE160086DFD5 /* OzinsheDemoUITests.swift */; };
 		DB4F1CC22AF3AE160086DFD5 /* OzinsheDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F1CC12AF3AE160086DFD5 /* OzinsheDemoUITestsLaunchTests.swift */; };
 		DB5C631A2B51354E00F78E8F /* MainMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C63192B51354E00F78E8F /* MainMovies.swift */; };
+		DB61E14B2B6FFDA20045ACD8 /* ImageZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB61E14A2B6FFDA20045ACD8 /* ImageZoom.swift */; };
+		DB79B45A2B6A6E6B00920575 /* ScreenshotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB79B4592B6A6E6B00920575 /* ScreenshotsViewController.swift */; };
 		DB945CA32B2B1FA0007C57BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB945CA52B2B1FA0007C57BD /* Localizable.strings */; };
 		DB945CA92B2C6F19007C57BD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB945CA82B2C6F19007C57BD /* ProfileViewController.swift */; };
 		DB945CAB2B2C7A39007C57BD /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB945CAA2B2C7A39007C57BD /* LanguageViewController.swift */; };
@@ -52,6 +54,7 @@
 		DBDA8AB72B4D62490020C9C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA8AB62B4D62490020C9C6 /* User.swift */; };
 		DBDA8AB92B4EA0E30020C9C6 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBDA8AB82B4EA0E30020C9C6 /* MovieCell.xib */; };
 		DBDA8ABC2B4EAF860020C9C6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA8ABB2B4EAF860020C9C6 /* SearchViewController.swift */; };
+		DBF5823C2B710E8C00F06DC3 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5823B2B710E8C00F06DC3 /* ImageScrollView.swift */; };
 		DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF780BC2B074BE2005DA017 /* TabBarController.swift */; };
 		DBF780C72B077016005DA017 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */; };
 		DBF780C82B077016005DA017 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */; };
@@ -122,6 +125,8 @@
 		DB4F1CBF2AF3AE160086DFD5 /* OzinsheDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheDemoUITests.swift; sourceTree = "<group>"; };
 		DB4F1CC12AF3AE160086DFD5 /* OzinsheDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DB5C63192B51354E00F78E8F /* MainMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovies.swift; sourceTree = "<group>"; };
+		DB61E14A2B6FFDA20045ACD8 /* ImageZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoom.swift; sourceTree = "<group>"; };
+		DB79B4592B6A6E6B00920575 /* ScreenshotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotsViewController.swift; sourceTree = "<group>"; };
 		DB945CA42B2B1FA0007C57BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DB945CA62B2B1FEE007C57BD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DB945CA72B2B2051007C57BD /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 		DBDA8AB62B4D62490020C9C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DBDA8AB82B4EA0E30020C9C6 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		DBDA8ABB2B4EAF860020C9C6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DBF5823B2B710E8C00F06DC3 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
 		DBF780BC2B074BE2005DA017 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DBF780C32B077016005DA017 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		DBF780C42B077016005DA017 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
@@ -218,6 +224,8 @@
 			children = (
 				DB4094BF2B35FB6D0001B505 /* UIViewController + Extensions.swift */,
 				DB3D42DC2B624A710017C137 /* GradientView.swift */,
+				DB61E14A2B6FFDA20045ACD8 /* ImageZoom.swift */,
+				DBF5823B2B710E8C00F06DC3 /* ImageScrollView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -361,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				DB2AFAAF2B638D9D00884BA6 /* MovieInfoViewController.swift */,
+				DB79B4592B6A6E6B00920575 /* ScreenshotsViewController.swift */,
 			);
 			path = MovieInfo;
 			sourceTree = "<group>";
@@ -652,6 +661,7 @@
 				DB0FEA212B4C018F0075614C /* Movie.swift in Sources */,
 				DBCA13412B613785009246E0 /* OnboardingViewController.swift in Sources */,
 				DB945CAB2B2C7A39007C57BD /* LanguageViewController.swift in Sources */,
+				DB79B45A2B6A6E6B00920575 /* ScreenshotsViewController.swift in Sources */,
 				DB1997D92B5929CC00344560 /* GenreAgeTableViewCell.swift in Sources */,
 				DBF780CF2B0D1E7F005DA017 /* MovieTableViewCell.swift in Sources */,
 				DB2AFAB22B638DDC00884BA6 /* MoviePlayerViewController.swift in Sources */,
@@ -676,6 +686,7 @@
 				DB3D42DD2B624A710017C137 /* GradientView.swift in Sources */,
 				DB0FEA1D2B482D370075614C /* Storage.swift in Sources */,
 				DB1997D32B591AE400344560 /* MainBannerTableViewCell.swift in Sources */,
+				DB61E14B2B6FFDA20045ACD8 /* ImageZoom.swift in Sources */,
 				DB0D77CA2B4FC960001E8BF7 /* CategoryTableViewController.swift in Sources */,
 				DB4CDBBD2B35AEAD007ECDBF /* LoginViewController.swift in Sources */,
 				DB5C631A2B51354E00F78E8F /* MainMovies.swift in Sources */,
@@ -683,6 +694,7 @@
 				DB4F1CA12AF3AE150086DFD5 /* SceneDelegate.swift in Sources */,
 				DBDA8AB72B4D62490020C9C6 /* User.swift in Sources */,
 				DB0FEA232B4C045F0075614C /* Screenshot.swift in Sources */,
+				DBF5823C2B710E8C00F06DC3 /* ImageScrollView.swift in Sources */,
 				DB0FEA252B4C04DC0075614C /* CategoryAge.swift in Sources */,
 				DB0FEA292B4C060A0075614C /* Category.swift in Sources */,
 			);

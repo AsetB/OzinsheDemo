@@ -33,7 +33,6 @@ class ProfileEditViewController: UIViewController, UITextFieldDelegate, UIPicker
         
         birthDateTextfield.inputView = datePicker
         datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: .valueChanged)
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {

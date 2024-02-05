@@ -29,17 +29,10 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
     @IBOutlet weak var passLabelTopToEmailTFBottom: NSLayoutConstraint!
     @IBOutlet weak var errorLabelBottomToPassLabelTop: NSLayoutConstraint!
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
         hideKeyboardWhenTappedAround()
-//        emailTextField.delegate = self
-//        textFieldDidBeginEditing(emailTextField)
-//        textFieldDidEndEditing(emailTextField)
     }
     
     func configureViews() {
@@ -164,13 +157,6 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
     
     @IBAction func showPassTF(_ sender: Any) {
         passTextField.isSecureTextEntry = !passTextField.isSecureTextEntry
-        
-//        if iconClick {
-//            passTextField.isSecureTextEntry = false
-//        } else {
-//            passTextField.isSecureTextEntry = true
-//        }
-//        iconClick = !iconClick
     }
     
     
@@ -185,19 +171,7 @@ class LoginViewController: UIViewController/*, UITextFieldDelegate*/ {
         passLabelTopToEmailTFBottom.priority = .defaultHigh
         errorLabelBottomToPassLabelTop.priority = .defaultLow
     }
-    
-    
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        if textField == emailTextField {
-//            //textField.layer.borderWidth = 1
-//            textField.layer.borderColor = UIColor(red: 151/255, green: 83/255, blue: 240/255, alpha: 1.0).cgColor
-//        }
-//    }
-//    
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        textField.layer.borderColor = UIColor(red: 229/255, green: 235/255, blue: 240/255, alpha: 1.0).cgColor
-//    }
-    
+
     /*
     // MARK: - Navigation
 

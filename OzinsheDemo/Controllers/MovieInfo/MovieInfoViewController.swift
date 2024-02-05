@@ -13,7 +13,7 @@ import SDWebImage
 import SVProgressHUD
 
 class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var seasonsButton: UIButton!
@@ -35,17 +35,18 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var screenshotsCollectionView: UICollectionView!
     @IBOutlet weak var similarLabel: UILabel!
     @IBOutlet weak var similarCollectionView: UICollectionView!
+    @IBOutlet weak var screenLabelTopToSeriesLableBottom: NSLayoutConstraint!
+    @IBOutlet weak var screenLabelTopToViewLineBottom: NSLayoutConstraint!
     
     var movie = Movie()
     var similarMovies: [Movie] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        downloadSimilar()
         setData()
         configureViews()
-        downloadSimilar()
         navigationItem.title = " "
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,6 +74,8 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
             seasonsButton.isHidden = true
             seasonsArrow.isHidden = true
             seriesLabel.isHidden = true
+            screenLabelTopToSeriesLableBottom.priority = .defaultLow
+            screenLabelTopToViewLineBottom.priority = .defaultHigh
         } else {
             seasonsButton.setTitle("\(movie.seasonCount)" + "SEASON".localized() + "\(movie.seriesCount)" + "SERIES".localized(), for: .normal)
         }
@@ -87,6 +90,10 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
             favoriteButton.setImage(UIImage(named: "FavoriteButtonEmpty"), for: .normal)
         }
         labelLocalize()
+        if similarMovies.isEmpty {
+            similarLabel.isHidden = true
+            similarCollectionView.isHidden = true
+        }
     }
     
     func labelLocalize() {
@@ -155,7 +162,7 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
             }
         }
     }
-
+    
     
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -234,27 +241,6 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
         }
     }
     
-    //MARK: Image on tap
-//    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
-//        let imageView = sender.view as! UIImageView
-//        let newImageView = UIImageView(image: imageView.image)
-//        newImageView.frame = UIScreen.main.bounds
-//        newImageView.backgroundColor = .black
-//        newImageView.contentMode = .scaleAspectFit
-//        newImageView.isUserInteractionEnabled = true
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
-//        newImageView.addGestureRecognizer(tap)
-//        self.view.addSubview(newImageView)
-//        self.navigationController?.isNavigationBarHidden = true
-//        self.tabBarController?.tabBar.isHidden = true
-//    }
-//
-//    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
-//        //self.navigationController?.isNavigationBarHidden = false
-//        self.tabBarController?.tabBar.isHidden = false
-//        sender.view?.removeFromSuperview()
-//    }
-    
     //MARK: Collection view
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -299,9 +285,9 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
         
         imageview.sd_setImage(with: URL(string: movie.screenshots[indexPath.row].link), placeholderImage: nil, context: [.imageTransformer: transformer])
         
-//        let pictureTap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-//        imageview.addGestureRecognizer(pictureTap)
-//        imageview.isUserInteractionEnabled = true
+        //        let pictureTap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        //        imageview.addGestureRecognizer(pictureTap)
+        //        imageview.isUserInteractionEnabled = true
         
         return cell
     }
@@ -316,7 +302,9 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
             
         }
         //logic to display screens
-
+        let screenVC = storyboard?.instantiateViewController(withIdentifier: "ScreenshotsViewController") as! ScreenshotsViewController
+        screenVC.selectedScreenshotIndex = indexPath.item
+        screenVC.movie = movie
+        navigationController?.show(screenVC, sender: self)
+        }
     }
-
-}

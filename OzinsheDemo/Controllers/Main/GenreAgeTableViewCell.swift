@@ -20,14 +20,10 @@ class GenreAgeTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
         // Initialization code
         collectionView.dataSource = self
         collectionView.delegate = self
-        
     }
-    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func setData(mainMovie: MainMovies) {
@@ -64,7 +60,6 @@ class GenreAgeTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
             imageview.sd_setImage(with: URL(string: mainMovies.genres[indexPath.row].link), placeholderImage: nil, context: [.imageTransformer : transformer])
             nameLabel.text = mainMovies.genres[indexPath.row].name
         }
-        
         return cell
     }
     
