@@ -2506,8 +2506,8 @@
                                                 </subviews>
                                                 <color key="backgroundColor" name="F9FAFB - 111827"/>
                                                 <constraints>
-                                                    <constraint firstItem="EBK-Rq-Avs" firstAttribute="top" secondItem="Bh4-ii-8FO" secondAttribute="bottom" constant="24" id="1h8-oi-mG7"/>
-                                                    <constraint firstItem="Nal-o7-FsI" firstAttribute="top" secondItem="Bh4-ii-8FO" secondAttribute="bottom" constant="24" id="1mV-on-7VD"/>
+                                                    <constraint firstItem="EBK-Rq-Avs" firstAttribute="top" secondItem="Bh4-ii-8FO" secondAttribute="bottom" priority="750" constant="24" id="1h8-oi-mG7"/>
+                                                    <constraint firstItem="Nal-o7-FsI" firstAttribute="top" secondItem="Bh4-ii-8FO" secondAttribute="bottom" priority="750" constant="24" id="1mV-on-7VD"/>
                                                     <constraint firstItem="eTk-Ln-ZcA" firstAttribute="centerY" secondItem="xa0-XI-bXL" secondAttribute="centerY" id="2gs-qr-seY"/>
                                                     <constraint firstAttribute="trailing" secondItem="EBK-Rq-Avs" secondAttribute="trailing" constant="24" id="342-Ae-DbT"/>
                                                     <constraint firstItem="eTk-Ln-ZcA" firstAttribute="leading" secondItem="xa0-XI-bXL" secondAttribute="trailing" id="6P6-rN-eFE"/>
@@ -2523,6 +2523,7 @@
                                                     <constraint firstItem="0k0-Or-Sas" firstAttribute="top" secondItem="6K2-ai-kki" secondAttribute="bottom" constant="32" id="KoI-Tz-axB"/>
                                                     <constraint firstItem="Tyf-Xy-rou" firstAttribute="top" secondItem="EBK-Rq-Avs" secondAttribute="bottom" constant="8" id="L8d-pq-5Qd"/>
                                                     <constraint firstAttribute="trailing" secondItem="tCe-we-fmg" secondAttribute="trailing" constant="24" id="MMP-rV-9ey"/>
+                                                    <constraint firstItem="EBK-Rq-Avs" firstAttribute="top" secondItem="QUF-SU-pK2" secondAttribute="bottom" priority="250" constant="16" id="OpZ-fM-ekg"/>
                                                     <constraint firstItem="rXF-2T-hoO" firstAttribute="leading" secondItem="3Rg-0V-QUk" secondAttribute="leading" id="PQb-7u-0WV"/>
                                                     <constraint firstAttribute="trailing" secondItem="p9g-ps-qDU" secondAttribute="trailing" constant="24" id="Qtw-8R-IKf"/>
                                                     <constraint firstItem="oqO-zX-9Bc" firstAttribute="leading" secondItem="3Rg-0V-QUk" secondAttribute="leading" constant="24" id="RKA-xL-9C7"/>
@@ -2532,6 +2533,7 @@
                                                     <constraint firstItem="xa0-XI-bXL" firstAttribute="leading" secondItem="3Rg-0V-QUk" secondAttribute="leading" constant="24" id="T9U-c1-rNV"/>
                                                     <constraint firstItem="6FM-yZ-uFg" firstAttribute="leading" secondItem="3Rg-0V-QUk" secondAttribute="leading" constant="24" id="UO5-GU-xop"/>
                                                     <constraint firstAttribute="trailing" secondItem="eTk-Ln-ZcA" secondAttribute="trailing" id="WPw-kc-Ex9"/>
+                                                    <constraint firstItem="Nal-o7-FsI" firstAttribute="top" secondItem="QUF-SU-pK2" secondAttribute="bottom" priority="250" constant="16" id="XHF-wK-l7K"/>
                                                     <constraint firstItem="37l-vE-h6l" firstAttribute="top" secondItem="oqO-zX-9Bc" secondAttribute="bottom" constant="24" id="Xfo-qb-3Zs"/>
                                                     <constraint firstAttribute="trailing" secondItem="6K2-ai-kki" secondAttribute="trailing" id="XzN-PE-Imc"/>
                                                     <constraint firstItem="6K2-ai-kki" firstAttribute="leading" secondItem="3Rg-0V-QUk" secondAttribute="leading" id="YBk-2K-v9w"/>
@@ -2613,7 +2615,11 @@
                         <outlet property="backgroundView" destination="3Rg-0V-QUk" id="BP0-vw-KRQ"/>
                         <outlet property="descriptionLabel" destination="QUF-SU-pK2" id="FNH-Di-1zL"/>
                         <outlet property="directorLabel" destination="Nal-o7-FsI" id="LfP-E9-2Hf"/>
+                        <outlet property="directorLabelTopToDescLabelBottom" destination="XHF-wK-l7K" id="LaR-UJ-VT5"/>
+                        <outlet property="directorLabelTopToShowDescButBottom" destination="1mV-on-7VD" id="2on-9z-1L2"/>
                         <outlet property="directorNameLabel" destination="EBK-Rq-Avs" id="NBm-VG-3ex"/>
+                        <outlet property="directorNameLabelTopToDescLabelBottom" destination="OpZ-fM-ekg" id="zgt-36-BaR"/>
+                        <outlet property="directorNameLabelTopToShowDescButBottom" destination="1h8-oi-mG7" id="Ylt-pi-XPB"/>
                         <outlet property="favoriteButton" destination="oi8-wa-a2e" id="0j3-hu-mXR"/>
                         <outlet property="gradientViewOnBackggroundView" destination="1YQ-yY-t5H" id="D88-5r-1AX"/>
                         <outlet property="posterImageView" destination="X0g-yE-bTY" id="r33-1w-F7m"/>
@@ -3079,32 +3085,6 @@
             <point key="canvasLocation" x="-160" y="-378"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="0Hu-KY-cZw">
-            <size key="intrinsicContentSize" width="189.66666666666666" height="17"/>
-        </designable>
-        <designable name="HlX-4s-ahG">
-            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
-        </designable>
-        <designable name="LMZ-sC-glF">
-            <size key="intrinsicContentSize" width="95.333333333333329" height="21"/>
-        </designable>
-        <designable name="LcD-1U-WLC">
-            <size key="intrinsicContentSize" width="144" height="21"/>
-        </designable>
-        <designable name="NM5-CJ-5Gd">
-            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
-        </designable>
-        <designable name="TpT-4H-R8A">
-            <size key="intrinsicContentSize" width="144" height="21"/>
-        </designable>
-        <designable name="lWt-ia-gkf">
-            <size key="intrinsicContentSize" width="189.66666666666666" height="17"/>
-        </designable>
-        <designable name="pjT-hl-u0e">
-            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
-        </designable>
-    </designables>
     <resources>
         <image name="ArrowLeft" width="95" height="100"/>
         <image name="Avatar" width="104" height="104"/>

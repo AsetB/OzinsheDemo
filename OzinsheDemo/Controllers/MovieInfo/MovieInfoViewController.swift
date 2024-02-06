@@ -38,6 +38,10 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var similarCollectionView: UICollectionView!
     @IBOutlet weak var screenLabelTopToSeriesLableBottom: NSLayoutConstraint!
     @IBOutlet weak var screenLabelTopToViewLineBottom: NSLayoutConstraint!
+    @IBOutlet weak var directorLabelTopToShowDescButBottom: NSLayoutConstraint!
+    @IBOutlet weak var directorLabelTopToDescLabelBottom: NSLayoutConstraint!
+    @IBOutlet weak var directorNameLabelTopToShowDescButBottom: NSLayoutConstraint!
+    @IBOutlet weak var directorNameLabelTopToDescLabelBottom: NSLayoutConstraint!
     
     var movie = Movie()
     var similarMovies: [Movie] = []
@@ -83,6 +87,11 @@ class MovieInfoViewController: UIViewController, UICollectionViewDelegate, UICol
         
         if descriptionLabel.maxNumberOfLines < 4 {
             showFullDescriptionButton.isHidden = true
+            gradientViewOnBackggroundView.isHidden = true
+            directorLabelTopToShowDescButBottom.priority = .defaultLow
+            directorLabelTopToDescLabelBottom.priority = .defaultHigh
+            directorNameLabelTopToShowDescButBottom.priority = .defaultLow
+            directorNameLabelTopToDescLabelBottom.priority = .defaultHigh
         }
         
         if movie.favorite {
