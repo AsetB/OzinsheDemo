@@ -7,7 +7,9 @@
 
 import UIKit
 import YouTubePlayer
-
+/*
+Current player implementation uses YouTubePlayerKit instead YouTubePlayer, delete pod and MoviePlayerViewController?
+*/
 class MoviePlayerViewController: UIViewController {
 
     @IBOutlet weak var player: YouTubePlayerView!

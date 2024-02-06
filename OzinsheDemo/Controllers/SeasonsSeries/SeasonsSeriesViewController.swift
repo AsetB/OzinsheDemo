@@ -11,6 +11,7 @@ import SVProgressHUD
 import SwiftyJSON
 import SDWebImage
 import Localize_Swift
+import YouTubePlayerKit
 
 class SeasonsSeriesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
 
@@ -149,10 +150,16 @@ class SeasonsSeriesViewController: UIViewController, UICollectionViewDelegate, U
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let playerViewController = storyboard?.instantiateViewController(withIdentifier: "MoviePlayerViewController") as! MoviePlayerViewController
-        
-        playerViewController.video_link = seasons[currentSeason].videos[indexPath.row].link
-        navigationController?.show(playerViewController, sender: self)
+        let youTubePlayerViewController = YouTubePlayerViewController(
+            player: ""
+        )
+        youTubePlayerViewController.player.source = .video(id: seasons[currentSeason].videos[indexPath.row].link, startSeconds: nil, endSeconds: nil)
+        youTubePlayerViewController.player.configuration = .init(
+            fullscreenMode: .system, autoPlay: true, showControls: true, showFullscreenButton: true, useModestBranding: false, playInline: false, showRelatedVideos: false)
+        self.show(youTubePlayerViewController, sender: self)
+//        let playerViewController = storyboard?.instantiateViewController(withIdentifier: "MoviePlayerViewController") as! MoviePlayerViewController
+//        playerViewController.video_link = seasons[currentSeason].videos[indexPath.row].link
+//        navigationController?.show(playerViewController, sender: self)
     }
     
     /*
