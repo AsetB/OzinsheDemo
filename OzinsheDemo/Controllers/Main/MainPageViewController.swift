@@ -24,6 +24,7 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         
         addNavBarImage()
         downloadMainBanners()
+        navigationItem.title = " "
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -330,6 +331,7 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
                 let cell = tableView.dequeueReusableCell(withIdentifier: "GenreAgeCell", for: indexPath) as! GenreAgeTableViewCell
                 
                 cell.setData(mainMovie: mainMovies[indexPath.row])
+                cell.delegate = self
                 return cell
             }()
         case .ageCategory:
@@ -337,6 +339,7 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
                 let cell = tableView.dequeueReusableCell(withIdentifier: "GenreAgeCell", for: indexPath) as! GenreAgeTableViewCell
                 
                 cell.setData(mainMovie: mainMovies[indexPath.row])
+                cell.delegate = self
                 return cell
             }()
         case .mainMovie:
@@ -382,6 +385,24 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         let movieInfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as! MovieInfoViewController
         movieInfoVC.movie = movie
         navigationController?.show(movieInfoVC, sender: self)
+    }
+    
+    func genreDidSelect(genreID: Int, genreName: String) {
+        let categoryString = "genreId"
+        let categoryTableViewController = storyboard?.instantiateViewController(withIdentifier: "CategoryTableViewController") as! CategoryTableViewController
+        categoryTableViewController.categoryID = genreID
+        categoryTableViewController.categoryName = genreName
+        categoryTableViewController.categoryString = categoryString
+        navigationController?.show(categoryTableViewController, sender: self)
+    }
+    
+    func ageDidSelect(ageID: Int, ageName: String) {
+        let categoryString = "categoryAgeId"
+        let categoryTableViewController = storyboard?.instantiateViewController(withIdentifier: "CategoryTableViewController") as! CategoryTableViewController
+        categoryTableViewController.categoryID = ageID
+        categoryTableViewController.categoryName = ageName
+        categoryTableViewController.categoryString = categoryString
+        navigationController?.show(categoryTableViewController, sender: self)
     }
 
 }

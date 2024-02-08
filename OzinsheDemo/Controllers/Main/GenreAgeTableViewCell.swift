@@ -13,6 +13,7 @@ class GenreAgeTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    weak var delegate: MovieProtocol?
     var mainMovies = MainMovies()
     
     override func awakeFromNib() {
@@ -65,5 +66,11 @@ class GenreAgeTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        if mainMovies.cellType == .ageCategory {
+            delegate?.ageDidSelect(ageID: mainMovies.categoryAges[indexPath.row].id, ageName: mainMovies.categoryAges[indexPath.row].name)
+        } else {
+            delegate?.genreDidSelect(genreID: mainMovies.genres[indexPath.row].id, genreName: mainMovies.genres[indexPath.row].name)
+        }
+        
     }
 }

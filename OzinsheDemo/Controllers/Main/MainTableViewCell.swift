@@ -11,6 +11,8 @@ import Localize_Swift
 
 protocol MovieProtocol: AnyObject {
     func movieDidSelect(movie: Movie)
+    func genreDidSelect(genreID: Int, genreName: String)
+    func ageDidSelect(ageID: Int, ageName: String)
 }
 
 class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {

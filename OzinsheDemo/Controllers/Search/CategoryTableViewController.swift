@@ -14,6 +14,7 @@ import SwiftyJSON
 class CategoryTableViewController: UITableViewController {
     
     var categoryID: Int = 0
+    var categoryString: String = ""
     var categoryName = ""
     var movies: [Movie] = []
     
@@ -26,12 +27,6 @@ class CategoryTableViewController: UITableViewController {
         self.title = categoryName
         
         downloadMoviesByCategory()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     func downloadMoviesByCategory() {
@@ -39,7 +34,7 @@ class CategoryTableViewController: UITableViewController {
         
         let headers: HTTPHeaders = ["Authorization": "Bearer \(Storage.sharedInstance.accessToken)"]
         
-        let parameters = ["categoryId": categoryID]
+        let parameters = [categoryString: categoryID]
         
         AF.request(URLs.MOVIES_BY_CATEGORY_URL, method: .get, parameters: parameters, headers: headers).responseData { response in
             
