@@ -11,9 +11,7 @@ import SwiftyJSON
 class CategoryAge {
     public var id: Int = 0
     public var name: String = ""
-    //public var fileId: Int = 0
     public var link: String = ""
-    //public var movieCount: Int = 0
     
     init(json: JSON) {
         if let data = json["id"].int {

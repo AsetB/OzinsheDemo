@@ -3098,28 +3098,28 @@
     </scenes>
     <designables>
         <designable name="0Hu-KY-cZw">
-            <size key="intrinsicContentSize" width="133.66666666666666" height="17"/>
+            <size key="intrinsicContentSize" width="189.66666666666666" height="17"/>
         </designable>
         <designable name="HlX-4s-ahG">
-            <size key="intrinsicContentSize" width="139.33333333333334" height="20"/>
+            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
         </designable>
         <designable name="LMZ-sC-glF">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="21"/>
+            <size key="intrinsicContentSize" width="95.333333333333329" height="21"/>
         </designable>
         <designable name="LcD-1U-WLC">
-            <size key="intrinsicContentSize" width="87.666666666666671" height="21"/>
+            <size key="intrinsicContentSize" width="144" height="21"/>
         </designable>
         <designable name="NM5-CJ-5Gd">
-            <size key="intrinsicContentSize" width="139.33333333333334" height="20"/>
+            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
         </designable>
         <designable name="TpT-4H-R8A">
-            <size key="intrinsicContentSize" width="87.666666666666671" height="21"/>
+            <size key="intrinsicContentSize" width="144" height="21"/>
         </designable>
         <designable name="lWt-ia-gkf">
-            <size key="intrinsicContentSize" width="133.66666666666666" height="17"/>
+            <size key="intrinsicContentSize" width="189.66666666666666" height="17"/>
         </designable>
         <designable name="pjT-hl-u0e">
-            <size key="intrinsicContentSize" width="139.33333333333334" height="20"/>
+            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
         </designable>
     </designables>
     <resources>

@@ -11,8 +11,7 @@ import SwiftyJSON
 class Screenshot {
     public var id: Int = 0
     public var link: String = ""
-//    var fileId: Int = 0
-//    var movieId: Int = 0
+    
     init() {
     }
     
