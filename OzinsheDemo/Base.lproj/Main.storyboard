@@ -1673,7 +1673,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Құпия сөзді қайталаңыз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjY-0a-RRL">
-                                <rect key="frame" x="24" y="226" width="163.66666666666666" height="17"/>
+                                <rect key="frame" x="24" y="226" width="159.33333333333334" height="17"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
                                 <color key="textColor" name="111827 - FFFFFF"/>
                                 <nil key="highlightedColor"/>
@@ -3098,28 +3098,28 @@
     </scenes>
     <designables>
         <designable name="0Hu-KY-cZw">
-            <size key="intrinsicContentSize" width="189.66666666666666" height="17"/>
+            <size key="intrinsicContentSize" width="133.66666666666666" height="17"/>
         </designable>
         <designable name="HlX-4s-ahG">
-            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
+            <size key="intrinsicContentSize" width="148" height="19"/>
         </designable>
         <designable name="LMZ-sC-glF">
-            <size key="intrinsicContentSize" width="95.333333333333329" height="21"/>
+            <size key="intrinsicContentSize" width="38.333333333333336" height="20.333333333333332"/>
         </designable>
         <designable name="LcD-1U-WLC">
-            <size key="intrinsicContentSize" width="144" height="21"/>
+            <size key="intrinsicContentSize" width="88" height="20.333333333333332"/>
         </designable>
         <designable name="NM5-CJ-5Gd">
-            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
+            <size key="intrinsicContentSize" width="148" height="19"/>
         </designable>
         <designable name="TpT-4H-R8A">
-            <size key="intrinsicContentSize" width="144" height="21"/>
+            <size key="intrinsicContentSize" width="88" height="20.333333333333332"/>
         </designable>
         <designable name="lWt-ia-gkf">
-            <size key="intrinsicContentSize" width="189.66666666666666" height="17"/>
+            <size key="intrinsicContentSize" width="133.66666666666666" height="17"/>
         </designable>
         <designable name="pjT-hl-u0e">
-            <size key="intrinsicContentSize" width="195.33333333333334" height="20"/>
+            <size key="intrinsicContentSize" width="148" height="19"/>
         </designable>
     </designables>
     <resources>

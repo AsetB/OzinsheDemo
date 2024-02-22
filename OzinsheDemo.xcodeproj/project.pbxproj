@@ -25,7 +25,6 @@
 		DB1997D72B59260900344560 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1997D62B59260900344560 /* HistoryTableViewCell.swift */; };
 		DB1997D92B5929CC00344560 /* GenreAgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1997D82B5929CC00344560 /* GenreAgeTableViewCell.swift */; };
 		DB2AFAB02B638D9D00884BA6 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAAF2B638D9D00884BA6 /* MovieInfoViewController.swift */; };
-		DB2AFAB22B638DDC00884BA6 /* MoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAB12B638DDC00884BA6 /* MoviePlayerViewController.swift */; };
 		DB2AFAB52B638E5300884BA6 /* SeasonsSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAB42B638E5300884BA6 /* SeasonsSeriesViewController.swift */; };
 		DB2AFAB72B63CECC00884BA6 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AFAB62B63CECC00884BA6 /* Season.swift */; };
 		DB3D42DD2B624A710017C137 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D42DC2B624A710017C137 /* GradientView.swift */; };
@@ -106,7 +105,6 @@
 		DB1997D62B59260900344560 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		DB1997D82B5929CC00344560 /* GenreAgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreAgeTableViewCell.swift; sourceTree = "<group>"; };
 		DB2AFAAF2B638D9D00884BA6 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
-		DB2AFAB12B638DDC00884BA6 /* MoviePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePlayerViewController.swift; sourceTree = "<group>"; };
 		DB2AFAB42B638E5300884BA6 /* SeasonsSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsSeriesViewController.swift; sourceTree = "<group>"; };
 		DB2AFAB62B63CECC00884BA6 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		DB3D42DC2B624A710017C137 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -202,14 +200,6 @@
 				5C6712D23BF0B1AA2C575262 /* Pods-OzinsheDemoTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		DB2AFAB32B638DF100884BA6 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				DB2AFAB12B638DDC00884BA6 /* MoviePlayerViewController.swift */,
-			);
-			path = Player;
 			sourceTree = "<group>";
 		};
 		DB3D42DB2B6229510017C137 /* MovieCell */ = {
@@ -407,7 +397,6 @@
 				DBDA8ABA2B4EAEED0020C9C6 /* Search */,
 				DBC90C902B46D52200744C1C /* Profile */,
 				DBC90C8F2B46D51B00744C1C /* Favorites */,
-				DB2AFAB32B638DF100884BA6 /* Player */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -672,7 +661,6 @@
 				DB79B45A2B6A6E6B00920575 /* ScreenshotsViewController.swift in Sources */,
 				DB1997D92B5929CC00344560 /* GenreAgeTableViewCell.swift in Sources */,
 				DBF780CF2B0D1E7F005DA017 /* MovieTableViewCell.swift in Sources */,
-				DB2AFAB22B638DDC00884BA6 /* MoviePlayerViewController.swift in Sources */,
 				DBB4DC862B345A1400E6D192 /* LogoutViewController.swift in Sources */,
 				DBF780BD2B074BE2005DA017 /* TabBarController.swift in Sources */,
 				DB945CA92B2C6F19007C57BD /* ProfileViewController.swift in Sources */,

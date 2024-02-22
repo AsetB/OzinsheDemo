@@ -13,7 +13,6 @@ PODS:
     - SVProgressHUD/Core (= 2.3.1)
   - SVProgressHUD/Core (2.3.1)
   - SwiftyJSON (5.0.1)
-  - YouTubePlayer (0.7.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -21,7 +20,6 @@ DEPENDENCIES:
   - SDWebImage
   - SVProgressHUD
   - SwiftyJSON
-  - YouTubePlayer
 
 SPEC REPOS:
   trunk:
@@ -30,7 +28,6 @@ SPEC REPOS:
     - SDWebImage
     - SVProgressHUD
     - SwiftyJSON
-    - YouTubePlayer
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
@@ -38,8 +35,7 @@ SPEC CHECKSUMS:
   SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
-  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
 
-PODFILE CHECKSUM: 85a449358d4b667daba2b0a96e34c1fbe8cedd1c
+PODFILE CHECKSUM: 2f965feca938f95d933a6fa829c1aaea7fd6c317
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.15.2
